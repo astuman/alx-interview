@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 # pascal_triangle.py
+import math
 def pascal_triangle(n):
     if n <= 0:
         return []
