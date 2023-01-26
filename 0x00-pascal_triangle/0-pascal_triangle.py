@@ -2,7 +2,7 @@
 # pascal_triangle.py
 def pascal_triangle(n):
     if n <= 0:
-        return []
+        return
     elif n > 0:
         for i in range(n, n+1):
             for j in range(0, n-i+1):
