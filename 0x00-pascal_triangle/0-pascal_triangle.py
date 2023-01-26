@@ -1,17 +1,18 @@
 #/usr/bin/python3
 
-n = int(input("Enter the number of rows:"))  
-  
-for i in range(1, n+1):  
-   for j in range(0, n-i+1):  
-      print(' ', end='')  
-  
-   # first element is always 1  
-   C = 1  
-   for j in range(1, i+1):  
-  
-      # first value in a line is always 1  
-      print(' ', C, sep='', end='')  
-  
-      # using Binomial Coefficient  
-      CC = C * (i - j) // j  
+def pascal_triangle(n):
+    if n <= 0:
+        return []
+    n = int(input("Enter the number of rows:")) 
+    for i in range(1, n+1):
+        for j in range(0, n-i+1):
+            print(' ', end='')
+            # first element is always 1
+            C = 1
+        for j in range(1, i+1):
+            # first value in a line is always 1
+            print(' ', C, sep='', end='')
+            # using Binomial Coefficient
+            CC = C * (i - j) // j
+        print()
+    
